@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ubicla</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+	<link href="lib/css/ionic.css" rel="stylesheet">
+	<link href="lib/css/leaflet.css" rel="stylesheet">
+
+	<script src="lib/js/ionic.bundle.min.js"></script>
+	<script src="lib/js/leaflet.js"></script>
+
+	<!-- Needed for Cordova/PhoneGap (will be a 404 during development) -->
+	<script src="cordova.js"></script>
+
+	<!--App files -->
+	<!--script src="js/app.js"></script-->
+</head>
+	
+<body>
+	<div class="bar bar-header bar-balanced">
+		<button class="button icon ion-navicon"></button>
+		<h1 class="title">Ubicla</h1>
+		<button class="button icon ion-android-locate"></button>
+	</div>
+
+	<div class="scroll-content has-header">
+		<div id="map" style="height:100%"></div>
+		<script type="text/javascript">
+			var map = L.map('map').setView([19.043925, -98.198204], 13);
+			L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		    maxZoom: 18
+		}).addTo(map);
+		</script>
+	</div>
+</body>
+</html>
