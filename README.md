@@ -1,4 +1,4 @@
-Ubicla ([english](/README.md))
+Ubicla
 ======
 
 Ubicla es el front-end de una aplicación web exportable a dispositivos móviles que provee información valiosa para ciclistas.
