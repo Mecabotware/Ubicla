@@ -5,21 +5,27 @@ Ubicla es el front-end de una aplicación web exportable a dispositivos móviles
 Ubicla está basada en [Ionic Framework](http://ionicframework.com/)
 
 ##Dependencias
-´´´
+
+```
 $ npm install -g cordova ionic
-´´´
+```
 
 ##Instalación / Configuración 
-####To-Do
+- Clona el proyecto 
+- Corre un servidor HTTP en la carpeta www
 
-##Uso 
-####To-Do
+Una opción puede ser utilizar  Simple HTTP Server de Python.
+
+```
+python -m SimpleHTTPServer
+
+```
 
 ##Screenshots
 Sección opcional. Añadir algunas capturas interesantes de su proyecto. Muy recomendable.
 
 ##Demo
-####[Demo](http://mecabotware.github.io/Ubicla
+####[Demo](http://mecabotware.github.io/Ubicla)
 
 ##¿Preguntas o problemas? 
 Si tienes algún problema con la aplicación o te gustaría proponer alguna funcionalidad te invitamos a la conversación del proyecto en nuestra 
