@@ -28,6 +28,24 @@ angular.module('ubicla.controllers', [])
 			break;
 	}
 
+	function onLocationFound(e){
+		leafletData.getMap().then(function(map) {
+			geoCircle = L.circle(e.latlng, 15, {
+			    color: 'red',
+			    fillColor: '#f03',
+			    fillOpacity: 0.5
+			}).addTo(map);
+        });
+			
+	}
+
+	$scope.geolocateMe = function(){
+		leafletData.getMap().then(function(map) {
+			map.on('locationfound', onLocationFound)
+            map.locate({setView: true, maxZoom: 16});
+        });
+	};
+
 	$http.get(url)
 		.then(
 			function(resp){
