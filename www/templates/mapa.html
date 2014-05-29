@@ -1,4 +1,4 @@
-<ion-view title="Talleres">
+<ion-view ng-controller="MapCtrl" title="{{seccion.nombre}}">
   <ion-nav-buttons side="left">
     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
@@ -7,7 +7,7 @@
   </ion-nav-buttons>
 
   <ion-content class="has-header">
-    <div ng-controller="MapTalleresCtrl" style="height:100%;">
+    <div style="height:100%;">
           <leaflet width="100%" height="100%" center="center" defaults="defaults" markers="markers"></leaflet>
         </div>
   </ion-content>

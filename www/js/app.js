@@ -18,77 +18,33 @@ angular.module('ubicla', ['ionic', 'ubicla.controllers', 'leaflet-directive'])
 			controller: "MenuCtrl"
 		})
 
-		.state('app.home',{
-			url:'/home',
+		.state('app.inicio',{
+			url:'/inicio',
 			views:{
 				'menuContent': {
-					templateUrl: "templates/home.html"
+					templateUrl: "templates/inicio.html"
 				}
 			}
 		})
 
-		.state('app.smartbikes',{
-			url:'/smartbikes',
+		.state('app.mapa',{
+			url:'/mapa/{seccion}',
 			views:{
 				'menuContent':{
-					templateUrl: "templates/smartbikes.html",
+					templateUrl: "templates/mapa.html",
 				}
 			}
 		})
 
-		.state('app.estacionamientos',{
-			url:'/estacionamientos',
+		.state('app.acerca',{
+			url:'/acerca',
 			views:{
 				'menuContent':{
-					templateUrl: "templates/estacionamientos.html",
+					templateUrl: "templates/acerca.html",
 				}
 			}
 		})
 
-		.state('app.biciamigos',{
-			url:'/biciamigos',
-			views:{
-				'menuContent':{
-					templateUrl: "templates/biciamigos.html",
-				}
-			}
-		})
 
-		.state('app.talleres',{
-			url:'/talleres',
-			views:{
-				'menuContent':{
-					templateUrl: "templates/talleres.html",
-				}
-			}
-		})
-
-		.state('app.rutas',{
-			url:'/rutas',
-			views:{
-				'menuContent':{
-					templateUrl: "templates/rutas.html",
-				}
-			}
-		})
-
-		.state('app.ciclovias',{
-			url:'/ciclovias',
-			views:{
-				'menuContent':{
-					templateUrl: "templates/ciclovias.html",
-				}
-			}
-		})
-
-		.state('app.emergencias',{
-			url:'/emergencias',
-			views:{
-				'menuContent':{
-					templateUrl: "templates/emergencias.html",
-				}
-			}
-		});
-
-		$urlRouterProvider.otherwise('/app/home');
+		$urlRouterProvider.otherwise('/app/inicio');
 });
