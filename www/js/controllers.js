@@ -4,30 +4,15 @@ angular.module('ubicla.controllers', [])
 })
 
 
-.controller('MapCtrl', function($scope, $stateParams, $http, leafletData) {
+.controller('MapCtrl', function($scope, $stateParams, $http, leafletData, UBICLA_CORE ,$rootScope) {
+	
 	$scope.seccion = {};
 	Markers = {};
-	var url = "";
-	switch($stateParams.seccion){
-		
-		case "smartbikes":
-			$scope.seccion.nombre = "Smartbikes";
-			url = "https://api.foursquare.com/v2/lists/5294d88111d29aff21b2f8d3?oauth_token=40GT1OHITFMQRGZR4GFG2VDMJ35W42SOB020D2EVA0PYU2LI&v=20131006"
-			break;
-		case "estacionamientos":
-			$scope.seccion.nombre = "Estacionamientos";
-			url = "https://api.foursquare.com/v2/lists/5070ff61e4b0339d310225d2?oauth_token=40GT1OHITFMQRGZR4GFG2VDMJ35W42SOB020D2EVA0PYU2LI&v=20131006"
-			break;
-		case "biciamigos":
-			$scope.seccion.nombre = "BiciAmigos";
-			url = "https://api.foursquare.com/v2/lists/50710a75e4b019e66b5c19d2?oauth_token=40GT1OHITFMQRGZR4GFG2VDMJ35W42SOB020D2EVA0PYU2LI&v=20131006"
-			break;
-		case "talleres":
-			$scope.seccion.nombre = "Talleres";
-			url = "https://api.foursquare.com/v2/lists/5073386f498e74a4f611cbe9?oauth_token=40GT1OHITFMQRGZR4GFG2VDMJ35W42SOB020D2EVA0PYU2LI&v=20131006"
-			break;
-	}
-
+	
+	var url = UBICLA_CORE.URL.replace(/%s/g, $rootScope.sections[ $stateParams.seccion ].fqsid );
+	
+	$scope.seccion.nombre = $rootScope.sections[ $stateParams.seccion ].name;
+	
 	function onLocationFound(e){
 		leafletData.getMap().then(function(map) {
 			geoCircle = L.circle(e.latlng, 15, {
