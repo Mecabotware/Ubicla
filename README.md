@@ -1,6 +1,6 @@
 ![alt text](http://bicis.mecabotware.com/logo.svg "Ubicla")
 
-Ubicla
+[![Stories in Ready](https://badge.waffle.io/mecabotware/ubicla.png?label=ready&title=Ready)](https://waffle.io/mecabotware/ubicla)
 ======
 
 Ubicla es el front-end de una aplicación web exportable a dispositivos móviles que provee información valiosa para ciclistas.
