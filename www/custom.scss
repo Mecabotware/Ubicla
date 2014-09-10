@@ -1,0 +1,43 @@
+// Los cambios en las variables deben de ir aquí:
+//Balanced es el color verde theme principal
+$balanced:              #a3c02f !default;
+$light:                 #fff !default;
+$stable:                #e8e8e8 !default;
+$positive:              #4a87ee !default;
+$calm:                  #43cee6 !default;
+$energized:             #f0b840 !default;
+$assertive:             #ef4e3a !default;
+$royal:                 #8a6de9 !default;
+$dark:                  #444 !default;
+
+@import "lib/ionic/scss/ionic";
+
+//Los estilos acá:
+// Cuando Sass preprocesa Ionic y sass se van a combinar al archivo 
+// css/style.css
+
+.scroll {
+	height: 100%;
+}
+
+.logo {
+	margin: 30px;
+	max-width: 100%;
+	max-height: 90px;
+}
+
+.partner {
+	margin: 20px;
+	max-width: 100%;
+	max-height: 200px;
+}
+
+img.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h3 {
+	text-align: center;
+}
