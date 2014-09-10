@@ -10,7 +10,9 @@ $assertive:             #ef4e3a !default;
 $royal:                 #8a6de9 !default;
 $dark:                  #444 !default;
 
+$ionicons-font-path:"/lib/ionic/fonts";
 @import "lib/ionic/scss/ionic";
+@import "lib/ionic/scss/ionicons/ionicons.scss";
 
 //Los estilos acá:
 // Cuando Sass preprocesa Ionic y sass se van a combinar al archivo 
@@ -21,8 +23,7 @@ $dark:                  #444 !default;
 }
 
 .logo {
-	margin: 30px;
-	max-width: 100%;
+	max-width: 50%;
 	max-height: 90px;
 }
 
