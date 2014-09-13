@@ -5,6 +5,8 @@
 
 Ubicla es el front-end de una aplicación web exportable a dispositivos móviles que provee información valiosa para ciclistas.
 
+[![Get it on Google Play](http://developer.android.com/images/brand/es-419_generic_rgb_wo_60.png)](https://play.google.com/store/apps/details?id=com.mecabotware.ubicla)
+
 ##Dependencias
 
 ```
@@ -33,17 +35,16 @@ ionic run [plataforma]
 Por el momento las plataformas soportadas son `android` y `ios`
 
 ##Screenshots
-![alt text](http://bicis.mecabotware.com/u1.png "Ubicla Inicio")
-![alt text](http://bicis.mecabotware.com/u2.png "Ubicla Mapa")
+![alt text](http://mecabotware.com/ubicla/u1.JPG "Ubicla Inicio")
+![alt text](http://mecabotware.com/ubicla/u2.JPG "Ubicla Mapa")
 
 ##Demo
 ####[Demo](http://mecabotware.github.io/Ubicla)
 
-##¿Preguntas o problemas? 
-Si tienes algún problema con la aplicación o te gustaría proponer alguna funcionalidad te invitamos a la conversación del proyecto en nuestra 
-página de [issues/problemas] (https://github.com/mecabotware/ubicla/issues). 
+##¿Preguntas o problemas?
+Si tienes algún problema con la aplicación o te gustaría proponer alguna funcionalidad te invitamos a la conversación del proyecto en nuestra página de [issues/problemas] (https://github.com/mecabotware/ubicla/issues).
 
-##¿Utilizando nuestro código? Nos encantaría saber 
+##¿Utilizando nuestro código? Nos encantaría saber
 Dado que este proyecto se hizo para el beneficio social a través de Open Data Puebla y Mecabotware nos gustaría saber el impacto que se puede generar.
 Por eso te invitamos a que compartas la URL y algunos screenshots de tu aplicación a: <hola@hfpuebla.org> y a <mecabotware@mecabotware.com>
 
@@ -66,6 +67,7 @@ Nuestro core team:
 - [Hugo Aguirre](https://github.com/bul-ikana)
 - [Edson Cortés](https://github.com/edmodj)
 - [Noé Domínguez](https://github.com/poguez)
+- [Josué G. Gutiérrez](https://github.com/blacknash)
 
 
 ![alt text](http://bicis.mecabotware.com/mecabotware.svg "Mecabotware")
